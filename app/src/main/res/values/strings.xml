@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="sobel">Sobel</string>
+    <string name="laplace">Laplace</string>
+    <string name="canny">Canny</string>
+    <string name="no_filters">No filters</string>
+</resources>
