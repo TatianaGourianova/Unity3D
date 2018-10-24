@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCameraView
+            android:id="@+id/camera"
+            android:layout_above="@id/divider"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="match_parent"/>
+
+    <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:background="?dividerHorizontal"
+            android:layout_above="@id/scrollView"
+            android:layout_height="1dp"/>
+
+    <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/noFiltersButton"
+                    android:text="@string/no_filters"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/cannyFilterButton"
+                    android:text="@string/canny"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/blurFilterButton"
+                    android:text="@string/blur"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/gaussianBlurButton"
+                    android:text="@string/gaussian_blur"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/medianBlurButton"
+                    android:text="@string/median_blur"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/boxFilterButton"
+                    android:text="@string/box_filter"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/erosionFilterButton"
+                    android:text="@string/erosion_filter"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+
+            <android.support.design.button.MaterialButton
+                    style="@style/Widget.Lab2.Button.TextButton"
+                    android:id="@+id/dilateFilterButton"
+                    android:text="@string/dilate_filter"
+                    android:layout_width="wrap_content"
+                    android:onClick="filterClick"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

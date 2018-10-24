@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="canny">Canny</string>
+    <string name="add_photo">Add photo</string>
+    <string name="no_filters">No filters</string>
+    <string name="blur">Blur</string>
+    <string name="gaussian_blur">Gaussian blur</string>
+    <string name="median_blur">Median blur</string>
+    <string name="box_filter">Box Filter</string>
+    <string name="erosion_filter">Erosion</string>
+    <string name="dilate_filter">Dilate</string>
+</resources>
